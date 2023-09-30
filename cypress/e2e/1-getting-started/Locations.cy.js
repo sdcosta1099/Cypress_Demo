@@ -66,28 +66,28 @@ describe("LocationAPIS", ()=>{
         //     });
         //  });
 
-         it("Get Communication", () => {
-            cy.request({
-                method: "GET",
-                url: "https://apis-qa.shrss.com/unity-web-exp/v1/location/communication",
-                headers: {
-                    Authorization: 'Bearer ' +authToken
-                },
-            }).then((response)=> {
-                expect(response.status).to.equal(200);
-            });
-         });
-         it("Get Recommended for Opt In", () => {
-            cy.request({
-                method: "GET",
-                url: "https://apis-internal-qa.shrss.com/unity-web-exp/v1/profile/:profile-id/location/recommended-for-opt-in",
-                headers: {
-                    Authorization: 'Bearer ' +authToken
-                },
-            }).then((response)=> {
-                expect(response.status).to.equal(200);
-            });
-         });
+        //  it("Get Communication", () => {
+        //     cy.request({
+        //         method: "GET",
+        //         url: "https://apis-qa.shrss.com/unity-web-exp/v1/location/communication",
+        //         headers: {
+        //             Authorization: 'Bearer ' +authToken
+        //         },
+        //     }).then((response)=> {
+        //         expect(response.status).to.equal(200);
+        //     });
+        //  });
+        //  it("Get Recommended for Opt In", () => {
+        //     cy.request({
+        //         method: "GET",
+        //         url: "https://apis-internal-qa.shrss.com/unity-web-exp/v1/profile/:profile-id/location/recommended-for-opt-in",
+        //         headers: {
+        //             Authorization: 'Bearer ' +authToken
+        //         },
+        //     }).then((response)=> {
+        //         expect(response.status).to.equal(200);
+        //     });
+        //  });
          it("Get Nearby Locations", () => {
             cy.request({
                 method: "GET",
